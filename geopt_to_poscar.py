@@ -108,7 +108,7 @@ poscar_text += ' '.join(vec_1) + '\n'
 poscar_text += ' '.join(vec_2) + '\n'
 poscar_text += ' '.join(vec_3) + '\n'
 for species in species_dict:
-    poscar_text += (species_dict[species] + ' ')
+    poscar_text += (str(species_dict[species]) + ' ')
 poscar_text += '\nSelective dynamics\nCartesian\n'
 poscar_text += coord_block
 poscar_file = open('POSCAR', 'w')
